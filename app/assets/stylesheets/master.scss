@@ -38,6 +38,7 @@
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
+  font-family: 'francois_oneregular', sans-serif;
 }
 
 header {
@@ -46,4 +47,15 @@ header {
 
 hr {
   clear: both;
+}
+
+h1 {
+  font-family: 'francois_oneregular', sans-serif;
+  font-size: 48px;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: 'francois_oneregular', sans-serif;
+  letter-spacing: -1.5px;
 }
