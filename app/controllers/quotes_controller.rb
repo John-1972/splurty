@@ -1,6 +1,8 @@
 class QuotesController < ApplicationController
   def index
-    @quote = Quote.order("RANDOM()").first
+    @quote = Quote.order(Arel.sql("RANDOM()")).first
+    # Rails 5.2 warns that "RANDOM()" is a 'non-attribute argument' & isn't allowed in Rails 6
+    # So raw SQL that's known to be safe must be wrapped in "Arel.sql()"
   end
 
   def create
