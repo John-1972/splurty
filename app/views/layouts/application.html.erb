@@ -23,7 +23,7 @@
         <% end %>
       </div> <!-- class="col-3" -->
 
-      <div class="col-4 col-sm-4 hidden-xs-down slogan"> <!-- Column is called "slogan", 4/12 of "xs" screen width (< 576px), also 4/12 for "sm" screens (> 576px) & larger. 'hidden' was in BS4 alpha 6, but was removed in BS4 beta, replaced with "d-none d-sm-block" -->
+      <div class="col-4 col-sm-4 d-none d-sm-block slogan"> <!-- Column is called "slogan", 4/12 of "xs" screen width (< 576px), also 4/12 for "sm" screens (> 576px) & larger. 'hidden-xs-down' was in BS4 alpha 6, but was removed in BS4 beta, replaced with "d-none d-sm-block" -->
         "Splurty" assignment for the FHP's Full-Stack web-dev course.
       </div>
 
@@ -40,10 +40,10 @@
       <div class="modal-dialog" role="document"> <!-- Inner container -->
         <div class="modal-content"> <!-- Another container, actual repository of modal content -->
           <div class="modal-header"> <!-- First of three sections -->
+            <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button> <!-- "x" button to close window -->
-            <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
           </div> <!-- class="modal-header" -->
           <%= simple_form_for Quote.new do |f| %> <!-- This is where the Rails code steps in -->
             <div class="modal-body"> <!-- Second of three sections -->
