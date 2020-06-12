@@ -1,4 +1,4 @@
-<div class="col-10 offset-1 about">
+<div class="col-10 offset-1 about"> <!-- 10/12 of "xs" screen, indented by 1/12 -->
   <h1>About Splurty</h1>
   <br />
   <p>
@@ -11,23 +11,23 @@
     For more details, click <a target="_blank" href="http://www.thefirehoseproject.com/"> here</a>.
   </p>
   <br />
-  <div class="row">
-    <div class="col-12 col-sm-4">
+  <div class="row"> <!-- Define a bootstrap row, then put columns into it -->
+    <div class="col-12 col-sm-4"> <!-- 12/12 of "xs" screen width, 4/12 of "sm" screen width -->
       <%= image_tag 'me.jpg', class: 'img-fluid' %>
-    </div>
+    </div> <!-- First column -->
 
-    <div class="col-12 col-sm-7 offset-sm-1">
+    <div class="col-12 col-sm-7 offset-sm-1"> <!-- 12/12 of "xs", 7/12 of "sm" with 1/12 indent -->
       <h2 class="text-center">John Henderson</h2>
       <br />
       <p>
         John Henderson is training to become a web developer. In the 1980s, he wrote his first programs in BASIC on 8-bit home computers. In the early 1990s, he learned to program in Pascal. In the late 1990s, he made websites with HTML code that would probably make modern-day developers weep. More recently, he used PHP to create simple web apps.
       </p>
-    </div>
-  </div>
+    </div> <!-- Second column -->
+  </div> <!-- class="row" -->
 
   <br class="clear" />
   <br />
   <br />
   <br />
   <br />
-</div>
+</div> <!-- class="about" -->
