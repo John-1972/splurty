@@ -31,7 +31,7 @@
         <!-- Button trigger modal -->
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
         &nbsp;&nbsp;
-        <%= link_to 'About', about_path %>       
+        <%= link_to 'About', about_path %>
       </div>
     </header> <!-- End of this row -->
 
@@ -51,7 +51,7 @@
               <br />
               <%= f.input :author, label: "Who said it?", placeholder: "Spike Milligan" %>
             </div> <!-- class="modal-body" -->
-            <div class="modal-footer"> <!-- Third of three sections -->
+            <div class="modal-footer"> <!-- Third of three sections, contains 2 buttons -->
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               <%= f.submit 'Create', class: 'btn btn-danger' %>
             </div> <!-- class="modal-footer" -->
