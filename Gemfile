@@ -57,7 +57,7 @@ gem 'popper_js', '~> 1.14.5'
 gem 'bootstrap', '~> 4.3.1'
 gem 'simple_form'
 
-gem 'rack', '~> 2.2', '>= 2.2.3'
+gem 'rack', '~> 2.2'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
